@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "Apex Benchmarking"
+version = "0.1.0"
+description = "Benchmarking for Macrocosmos's Apex Subnet"
+authors = ["Kalei <kalei@macrocosmos.ai>"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+bittensor = { git = "https://github.com/opentensor/bittensor.git", branch = "release/7.3.1" }
+wandb = "0.17.7"
+datasets = "^2.12.0"
+pandas = "^2.0.1"
+numpy = "^2.1.0"
+pyaml = "^21.10.1"
+cachetools = "^5.3.0"
+matplotlib = "^3.9.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

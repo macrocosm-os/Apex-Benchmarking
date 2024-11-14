@@ -1,0 +1,19 @@
+num_epochs: 1000000 # Number of epochs to benchmark
+uid_sample_size: 10 # Number of samples to use for UID
+percentile: 50 # Percentile to use to query miners
+
+wallet_name: "wallet_name" # Wallet name
+wallet_hotkey: "wallet_hotkey" # Hotkey for wallet
+
+netuid: 1 # Network UID
+network: "finney" # Network to use
+
+dataset_name: "mmlu" # Dataset name
+batch_size: 10 # Batch size for streaming
+seed: 42 # RNG Seed for dataset
+
+wandb_offline: False # Offline mode for wandb 
+wandb_token: "wandb_token" # Wandb token
+wandb_project: "wandb_project" # Wandb project
+wandb_entity: "wandb_entity" # Wandb entity
+wandb_max_run_length: 24 # Max run length in hours
